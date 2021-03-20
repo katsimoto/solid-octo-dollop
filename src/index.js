@@ -51,35 +51,30 @@ if (form) {
     cardMember.addEventListener('blur', () => {
         if (!cardMember.value) {
             console.error('Укажите владельца карты');
-            isValid = false;
         }
     });
 
     cardNumber.addEventListener('blur', () => {
         if (cardNumber.value.length !== 16) {
             console.error('Номер карты заполнен некорректно');
-            isValid = false;
         }
     });
 
     cvc.addEventListener('blur', () => {
         if (cvc.value.length !== 3) {
             console.error('cvc код заполнен некорректно');
-            isValid = false;
         }
     });
 
     dateMonth.addEventListener('blur', () => {
         if (dateMonth.value.length !== 2) {
             console.error('Месяц заполнен некорректно');
-            isValid = false;
         }
     });
 
     dateYear.addEventListener('blur', () => {
-        if (dateMonth.value.length !== 4) {
+        if (dateYear.value.length !== 4) {
             console.error('Год заполнен некорректно');
-            isValid = false;
         }
     });
 }
