@@ -7,12 +7,11 @@ if (form) {
     const cvc = form.querySelector('#cvc');
     const dateMonth = form.querySelector('#dateMonth');
     const dateYear = form.querySelector('#dateYear');
-    let isValid = true;
-
 
     if (button && cvc && cardMember && cardNumber && dateMonth && dateYear) {
         button.addEventListener('click', (e) => {
             e.preventDefault();
+            let isValid = true;
 
             if (cardNumber.value.length !== 16) {
                 console.error('Номер карты заполнен некорректно');
