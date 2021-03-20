@@ -13,7 +13,7 @@ if (form) {
     if (button && cvc && cardMember && cardNumber && dateMonth && dateYear) {
         button.addEventListener('click', (e) => {
             e.preventDefault();
-
+            isValid = true;
             if (cardNumber.value.length !== 16) {
                 console.error('Номер карты заполнен некорректно');
                 isValid = false;
