@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 270px;
-    height: 300px;
+    height: 150px;
     padding: 20px;
     justify-content: space-between;
     align-items: baseline;
@@ -19,14 +19,23 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.date {
+.inline {
     display: flex;
 }
 
-#dateMonth {
+.spaceBetween {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#dateMonth, #cvc {
     width: 30px;
 }
 
 #dateYear {
     width: 50px;
+}
+
+button {
+    margin-right: 9px;
 }
