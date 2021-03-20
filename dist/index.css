@@ -7,3 +7,15 @@
     justify-content: space-between;
     align-items: baseline;
 }
+
+.date {
+    display: flex;
+}
+
+#dateMonth {
+    width: 30px;
+}
+
+#dateYear {
+    width: 50px;
+}

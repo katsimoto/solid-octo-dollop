@@ -10,21 +10,22 @@
     <form class="bank-card-form">
         <label>
             Номер карты:
-            <input id="card-number"/>
+            <input id="card-number" name="bank" type="number"/>
         </label>
-        <label>
+        <div class="date">
             Дата:
-            <input id="date" type="date"/>
-        </label>
+        <label><input id="dateMonth" type="number" name="dateMonth"/></label>/
+        <label><input id="dateYear" type="number" name="dateYear"/></label>
+        </div>
         <label>
             Имя владельца:
             <input id="card-member"/>
         </label>
         <label>
-            CSV:
-            <input id="csv"/>
+            CVC:
+            <input type="number" name="cvc" id="cvc"/>
         </label>
-        <button type="submit">
+        <button name="name" type="submit">
             Отправить
         </button>
     </form>
